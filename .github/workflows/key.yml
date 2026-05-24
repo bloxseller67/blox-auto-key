@@ -1,8 +1,11 @@
 name: Key Diaria
 on:
   schedule:
-    - cron: '0 3 * * *'   # roda todo dia 00:00 BRT
+    - cron: '0 3 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
